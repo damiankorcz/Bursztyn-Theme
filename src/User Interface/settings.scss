@@ -1,0 +1,154 @@
+// [UI] Settings
+.modal.mod-settings .vertical-tab-header {
+	flex: none;
+	width: 215px;
+	padding: unset;
+	border-right: 1px solid var(--background-modifier-border);
+
+	&::-webkit-scrollbar-thumb {
+		border-right: unset;
+	}
+}
+
+.vertical-tab-header-group {
+	padding: unset;
+}
+
+.vertical-tab-header-group-title {
+	padding: 0 var(--size-4-3);
+	font-size: var(--font-ui-small);
+	color: var(--text-header);
+}
+
+.vertical-tab-header-group-items {
+	gap: var(--size-2-1);
+	padding: var(--size-4-1) var(--size-4-1) var(--size-4-3);
+}
+
+.vertical-tab-nav-item {
+	padding-left: var(--size-4-5);
+}
+
+.vertical-tab-nav-item.settings-search-input {
+	padding: unset;
+}
+
+.horizontal-tab-nav-item,
+.vertical-tab-nav-item {
+	color: var(--text-muted);
+}
+
+body:not(.is-phone) .horizontal-tab-nav-item.is-active,
+body:not(.is-phone) .vertical-tab-nav-item.is-active {
+	--background-modifier-hover: var(--interactive-accent);
+	--icon-color: var(--text-on-accent);
+	color: var(--text-accent);
+	background-color: unset;
+}
+
+:is(.horizontal-tab-content, .vertical-tab-content) {
+	padding: var(--size-4-8) var(--size-4-8) var(--size-4-4) var(--size-4-6);
+}
+
+.setting-item {
+	border-top: unset;
+}
+
+.setting-item-heading {
+	justify-content: center;
+	font-family: var(--font-header);
+	border-bottom: 1px solid var(--background-modifier-border);
+
+	.setting-item-name {
+		font-size: var(--font-ui-large);
+		color: var(--text-header);
+		text-align: center;
+	}
+
+	.setting-item-info {
+		flex: 1;
+	}
+
+	.setting-item-control {
+		flex: 0;
+	}
+}
+
+textarea:active,
+input.metadata-input-text:active,
+input[type="date"]:active,
+input[type="datetime-local"]:active,
+input[type="text"]:active,
+input[type="search"]:active,
+input[type="email"]:active,
+input[type="password"]:active,
+input[type="number"]:active,
+textarea:focus,
+input.metadata-input-text:focus,
+input[type="date"]:focus,
+input[type="datetime-local"]:focus,
+input[type="text"]:focus,
+input[type="search"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+textarea:focus-visible,
+input.metadata-input-text:focus-visible,
+input[type="date"]:focus-visible,
+input[type="datetime-local"]:focus-visible,
+input[type="text"]:focus-visible,
+input[type="search"]:focus-visible,
+input[type="email"]:focus-visible,
+input[type="password"]:focus-visible,
+input[type="number"]:focus-visible,
+select.dropdown:hover {
+	border: 1px solid var(--interactive-accent-mono);
+	box-shadow: unset;
+}
+
+select.dropdown {
+	background-color: unset;
+	border: 1px solid var(--background-modifier-border);
+	border-radius: var(--radius-s);
+	box-shadow: unset;
+
+	&:hover {
+		background-color: unset;
+	}
+}
+
+input[type="range"]::-webkit-slider-thumb {
+	background-color: var(--interactive-accent);
+}
+
+.modal.mod-settings .vertical-tab-header::before {
+	position: sticky;
+	top: 0;
+	z-index: var(--layer-cover);
+	display: block;
+	width: -webkit-fill-available;
+	width: fill-available;
+	height: 34px;
+	content: "";
+}
+
+.is-phone .modal.mod-settings .modal-title::after,
+.modal.mod-settings .vertical-tab-header::after {
+	position: absolute;
+	top: var(--size-4-1);
+	left: var(--size-4-1);
+	z-index: var(--layer-sidedock);
+	display: inline-flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: fit-content;
+	height: 24px;
+	padding: 0 var(--size-4-2);
+	font-size: var(--font-smaller);
+	font-weight: 600;
+	color: var(--text-accent);
+	content: "Bursztyn Dev";
+	border: 1px solid var(--background-modifier-border);
+	border-radius: var(--radius-s);
+}

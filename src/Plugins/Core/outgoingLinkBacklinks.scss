@@ -1,0 +1,18 @@
+.backlink-pane,
+.outgoing-link-pane {
+	padding-inline: var(--size-4-1);
+	padding-top: unset;
+
+	> .search-result-container {
+		padding: var(--size-4-1) 0 var(--size-4-1) var(--size-4-2);
+	}
+
+	> .tree-item-self {
+		padding: var(--size-4-1) var(--size-4-2) var(--size-4-1) var(--size-4-6);
+		background-color: var(--background-secondary);
+
+		.collapse-icon {
+			display: flex;
+		}
+	}
+}

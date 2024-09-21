@@ -1,0 +1,95 @@
+.markdown-source-view.mod-cm6 .cm-scroller {
+	scrollbar-gutter: unset;
+}
+
+.mod-right-split .markdown-preview-view,
+.mod-left-split .markdown-preview-view,
+.mod-right-split .markdown-source-view.mod-cm6 .cm-scroller,
+.mod-left-split .markdown-source-view.mod-cm6 .cm-scroller {
+	--file-margins: inherit;
+}
+
+.inline-title {
+	padding-bottom: var(--size-4-2);
+	text-align: center;
+	border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.metadata-properties-heading {
+	display: flex;
+	justify-content: center;
+
+	&.is-collapsed {
+		margin-bottom: unset;
+	}
+
+	.collapse-indicator {
+		position: unset;
+	}
+}
+
+.metadata-properties-title {
+	font-family: var(--font-header);
+}
+
+.metadata-container {
+	border-top: unset;
+	border-right: unset;
+	border-left: unset;
+}
+
+.HyperMD-header {
+	text-align: center;
+}
+
+.cm-s-obsidian .cm-line.HyperMD-header {
+	padding-bottom: var(--p-spacing);
+}
+
+/* Reading Mode */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-align: center;
+}
+
+.cm-inline-code:not(.cm-formatting-code),
+.cm-s-obsidian .cm-inline-code.cm-formatting ~ .cm-inline-code:not(.cm-formatting),
+.cm-s-obsidian .cm-inline-code:not(.cm-formatting) {
+	padding: 0 var(--size-4-1);
+	border: 1px solid var(--background-modifier-border);
+	border-radius: var(--radius-s);
+}
+
+.cm-s-obsidian span.cm-formatting-highlight,
+.cm-s-obsidian span.cm-highlight,
+.cm-s-obsidian span.cm-quote {
+	&.cm-em:not(.cm-strong) {
+		color: var(--italic-color);
+	}
+
+	&.cm-strong:not(.cm-em) {
+		color: var(--bold-color);
+	}
+}
+
+:is(em strong, strong em, .cm-em.cm-strong) {
+	color: var(--bold-italic-color);
+}
+
+// Borders for Codeblocks
+:is(.HyperMD-codeblock.HyperMD-codeblock-begin, .cm-s-obsidian div.HyperMD-codeblock-begin-bg) {
+	border-top: 1px solid var(--background-modifier-border);
+}
+
+.cm-s-obsidian div.HyperMD-codeblock {
+	border-right: 1px solid var(--background-modifier-border);
+	border-left: 1px solid var(--background-modifier-border);
+}
+
+:is(.HyperMD-codeblock.HyperMD-codeblock-end, .cm-s-obsidian div.HyperMD-codeblock-end-bg) {
+	border-bottom: 1px solid var(--background-modifier-border);
+}

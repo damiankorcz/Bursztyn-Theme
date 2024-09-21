@@ -1,0 +1,12 @@
+// [Plugins - Core] Outline
+.outline {
+	// Removes the dot that appears when the heading has no children. Same in Tags.
+	.tree-item-children > div:first-child {
+		display: none;
+	}
+}
+
+.workspace-leaf-content[data-type="outline"] .view-content {
+	padding-inline: var(--size-4-1);
+	padding-top: 0;
+}

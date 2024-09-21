@@ -1,0 +1,20 @@
+{
+  "name": "Bursztyn",
+  "version": "1.0.0",
+  "description": "Personal theme for Obsidian.md",
+  "author": "Damian Korcz",
+  "license": "MIT",
+  "homepage": "",
+  "scripts": {
+    "devTheme": "sass --watch --no-charset --no-source-map --color \"src/index.scss\" \"D:/Syncthing/Obsidian/Theme Test/.obsidian/themes/BursztynDev.css\"",
+    "buildTheme": "node ./build/buildTheme.config.mjs"
+  },
+  "devDependencies": {
+    "sass": "^1.70.0",
+    "stylelint": "^15.11.0",
+    "stylelint-config-recess-order": "^4.4.0",
+    "stylelint-config-recommended": "^11.0.0",
+    "stylelint-declaration-block-no-ignored-properties": "^2.8.0",
+    "stylelint-no-unsupported-browser-features": "^6.1.0"
+  }
+}

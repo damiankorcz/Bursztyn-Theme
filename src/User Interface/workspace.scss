@@ -1,0 +1,58 @@
+.view-header {
+	padding: 0 var(--size-4-2);
+}
+
+.sidebar-toggle-button {
+	height: unset;
+	padding: unset;
+
+	&.mod-right {
+		height: unset;
+		padding: unset;
+	}
+}
+
+.pane-empty {
+	padding: var(--size-4-1) var(--size-4-2);
+	margin: unset;
+	text-align: start;
+}
+
+/* [UI] Collapsed Pinned Tabs */
+.workspace .mod-root .workspace-tab-header[data-type="markdown"],
+.workspace .mod-root .workspace-tab-header[data-type="empty"] {
+	&:has(.mod-pinned) .workspace-tab-header-inner-icon {
+		display: flex;
+	}
+}
+
+.workspace-tab-header:has(.mod-pinned) .workspace-tab-header-inner-title {
+	display: none;
+}
+
+.workspace .mod-root .workspace-tab-header:has(.mod-pinned),
+.workspace-tab-header:has(.mod-pinned) .workspace-tab-header-inner {
+	flex: unset;
+	width: fit-content;
+	min-width: unset;
+}
+
+/* Ribbon */
+.workspace-ribbon.mod-left {
+	padding-top: var(--header-height);
+	margin-top: unset;
+
+	&::before {
+		width: calc(var(--ribbon-width) - 1px);
+		height: var(--header-height);
+		border-bottom: unset;
+	}
+}
+
+.workspace-ribbon .sidebar-toggle-button {
+	padding: unset;
+}
+
+.modal-close-button {
+	padding: 0 var(--size-2-1) 0 var(--size-2-2);
+}

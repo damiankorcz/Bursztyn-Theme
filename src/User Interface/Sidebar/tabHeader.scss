@@ -1,0 +1,59 @@
+.workspace-tab-header.is-active {
+	box-shadow: unset;
+}
+
+.workspace-tab-header-container {
+	padding: var(--size-4-1) var(--size-4-2);
+	border-bottom: unset;
+}
+
+.workspace-tab-header-new-tab {
+	padding: unset;
+	margin: unset;
+}
+
+.workspace-tab-header-tab-list {
+	padding: unset;
+}
+
+.mod-left-split .workspace-tab-header-container-inner,
+.mod-right-split .workspace-tab-header-container-inner {
+	gap: var(--size-4-1);
+	padding: unset;
+	margin: unset;
+}
+
+.workspace-tab-header-container-inner {
+	margin: unset;
+}
+
+.mod-root .workspace-tab-header-container-inner {
+	gap: var(--size-4-1);
+	padding: unset;
+}
+
+.workspace .mod-root .workspace-tab-header {
+	padding: var(--size-2-1);
+}
+
+.workspace-tab-header-inner {
+	gap: 1px;
+	padding: var(--size-4-1);
+}
+
+.mod-root .workspace-tab-header-inner {
+	padding-inline: var(--size-2-3) var(--size-2-1);
+}
+
+.workspace-tab-header::before,
+.workspace-tab-header::after,
+.workspace .mod-root .workspace-tab-header-inner::after {
+	display: none;
+}
+
+.mod-left-split .workspace-tab-header.has-active-menu,
+.mod-right-split .workspace-tab-header.has-active-menu,
+.mod-left-split .workspace-tab-header.is-active,
+.mod-right-split .workspace-tab-header.is-active {
+	background-color: unset;
+}

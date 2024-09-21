@@ -1,0 +1,53 @@
+// [Editor] Callouts
+body {
+	--callout-padding: unset;
+	--callout-radius: var(--radius-m);
+	--callout-border-width: 1px;
+	--callout-border-opacity: 0.5;
+	--callout-blend-mode: unset;
+	--callout-title-size: 1em;
+}
+
+.callout {
+	background-color: rgba(var(--callout-color), 0.05);
+
+	.callout-title {
+		position: relative;
+		z-index: 5;
+		gap: var(--size-4-2);
+		align-items: center;
+		min-height: 36px;
+		padding-inline: var(--size-4-2) 34px;
+		background: unset;
+		border-radius: var(--radius-m);
+
+		&:has(.callout-fold) {
+			padding-inline: var(--size-4-2);
+		}
+
+		&:empty + .callout-content {
+			padding: var(--size-4-1) var(--size-4-3);
+			border-top-style: solid;
+			border-top-width: 1px;
+			border-radius: var(--radius-m);
+		}
+	}
+
+	.callout-icon {
+		align-self: unset;
+	}
+
+	.callout-title-inner {
+		margin: var(--size-4-1) auto;
+		font-family: var(--font-header);
+	}
+
+	.callout-fold {
+		display: flex;
+		padding: unset;
+	}
+
+	.callout-content {
+		padding: 0 var(--size-4-3) var(--size-4-1) var(--size-4-3);
+	}
+}

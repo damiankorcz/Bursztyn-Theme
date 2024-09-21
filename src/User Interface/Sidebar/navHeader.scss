@@ -1,0 +1,54 @@
+.nav-header {
+	position: absolute;
+	bottom: calc(var(--size-2-2) + var(--scroll-bar-size));
+	z-index: var(--layer-popover);
+	display: flex;
+	order: 10;
+	width: -webkit-fill-available;
+	width: fill-available;
+	height: var(--header-height);
+	height: unset;
+	padding: 0 calc(var(--size-2-2) + var(--scroll-bar-size)) 0 var(--size-2-2);
+	pointer-events: none;
+	border-bottom: var(--window-border);
+
+	.workspace-drawer & {
+		order: unset;
+	}
+}
+
+.nav-buttons-container {
+	gap: var(--size-2-1);
+	align-items: center;
+	width: fit-content;
+	padding: var(--size-2-1);
+	pointer-events: auto;
+	background: var(--background-primary);
+	border: 1px solid var(--background-modifier-border);
+	border-radius: var(--radius-s);
+}
+
+.nav-action-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 26px;
+	height: 26px;
+	padding: 1px;
+	border-radius: var(--radius-s);
+}
+
+.workspace-leaf-content .nav-header {
+	justify-content: center;
+}
+
+.nav-files-container,
+.workspace-leaf-content[data-type="tag"] .tag-container,
+.workspace-leaf-content[data-type="backlink"] .backlink-pane,
+.workspace-leaf-content[data-type="starred"] .item-list,
+.workspace-leaf-content[data-type="bookmarks"] .view-content > div,
+.workspace-leaf-content[data-type="all-properties"] .view-content,
+.workspace-leaf-content[data-type="properties"] .view-content,
+.workspace-leaf-content[data-type="outline"] .view-content {
+	padding-bottom: calc(38px + 2 * var(--scroll-bar-size));
+}

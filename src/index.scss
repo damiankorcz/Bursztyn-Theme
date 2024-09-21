@@ -1,0 +1,38 @@
+@use "Info/licence.scss";
+
+/* Setup */
+@use "Fonts/fontFamilyImports.scss";
+@use "Variables/coreVariables.scss";
+
+/* Sidebar */
+@use "User Interface/Sidebar/navHeader.scss";
+@use "User Interface/Sidebar/tabHeader.scss";
+@use "User Interface/Sidebar/vaultProfile.scss";
+
+/* Other User Interface Elements */
+@use "User Interface/popups.scss";
+@use "User Interface/scrollBar.scss";
+@use "User Interface/settings.scss";
+@use "User Interface/statusBar.scss";
+@use "User Interface/workspace.scss";
+
+/* Editor */
+@use "Editor/editorStyling.scss";
+@use "Editor/callouts.scss";
+
+/* Core Plugins */
+@use "Plugins/Core/bookmarks.scss";
+@use "Plugins/Core/canvas.scss";
+@use "Plugins/Core/fileExplorer.scss";
+@use "Plugins/Core/properties.scss";
+@use "Plugins/Core/outgoingLinkBacklinks.scss";
+@use "Plugins/Core/outline.scss";
+@use "Plugins/Core/search.scss";
+@use "Plugins/Core/tags.scss";
+
+/* Theme Plugins */
+@use "Plugins/Theme/vaultIcon.scss";
+@use "Plugins/Theme/markHighlightSystem.scss";
+
+/* Community Plugins */
+@use "Plugins/Community/searchSettings.scss";

@@ -1,0 +1,13 @@
+body:not(.native-scrollbars) {
+	::-webkit-scrollbar {
+		width: var(--scroll-bar-size);
+		height: var(--scroll-bar-size);
+	}
+
+	::-webkit-scrollbar-thumb {
+		padding: unset;
+		padding-bottom: 25px;
+		margin: unset;
+		border-radius: none;
+	}
+}

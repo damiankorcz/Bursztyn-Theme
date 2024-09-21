@@ -1,0 +1,24 @@
+.nav-folder:not(.is-collapsed) {
+	>.nav-folder-title {
+		color: var(--interactive-accent-mono);
+
+		.collapse-icon svg.svg-icon {
+			color: var(--interactive-accent-mono);
+		}
+	}
+}
+
+.nav-file-title.is-active {
+	text-decoration: underline;
+}
+
+.nav-files-container {
+	padding-inline: var(--size-4-1);
+	padding-top: unset;
+}
+
+.tree-item-self {
+	padding-inline-start: none !important;
+	margin-inline-start: none !important;
+	margin-bottom: 1px;
+}

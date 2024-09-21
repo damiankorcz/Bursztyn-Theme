@@ -1,0 +1,54 @@
+{
+	"folders": [
+		{
+			"path": "./"
+		}
+	],
+	"settings": {
+		"[Log]": {
+			"editor.fontSize": 14
+		},
+		"files.exclude": {
+			".git": true,
+			".github": true,
+			".vscode": true,
+			"node_modules": true
+		},
+		"search.exclude": {
+			".git": true
+		},
+		"editor.wordWrap": "on",
+		"files.autoSaveDelay": 500,
+		"task.allowAutomaticTasks": "on",
+		"files.associations": {
+			"styleSettingsConfig.scss": "yaml",
+			"MHS_styleSettings.scss": "yaml"
+		}
+	},
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"label": "Bursztyn - Dev Theme",
+				"type": "shell",
+				"command": "npm run devTheme",
+				"group": {
+					"kind": "build",
+					"isDefault": true
+				},
+				"runOptions": {
+					"runOn": "folderOpen"
+				}
+			},
+			{
+				"label": "Bursztyn - Build Theme",
+				"type": "shell",
+				"command": "npm run buildTheme",
+				"group": {
+					"kind": "build",
+					"isDefault": true
+				}
+			}
+		]
+	}
+}

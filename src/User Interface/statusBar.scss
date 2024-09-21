@@ -1,0 +1,16 @@
+.status-bar {
+	--status-bar-position: absolute;
+	right: 0;
+	left: 0;
+	gap: var(--size-2-1);
+	width: fit-content;
+	padding: var(--size-2-1);
+	margin: 0 auto calc(var(--size-2-3) + var(--scroll-bar-size));
+	background: var(--background-primary);
+	border: 1px solid var(--background-modifier-border);
+	border-radius: var(--radius-s);
+}
+
+.status-bar-item.mod-clickable:hover {
+	color: var(--interactive-accent-text);
+}

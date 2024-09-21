@@ -1,0 +1,77 @@
+// [Plugins - Theme] Mark Highlight System
+.cm-s-obsidian span.cm-formatting-highlight,
+.cm-s-obsidian span.cm-highlight {
+	padding: 2px 3px;
+	font-size: var(--font-small);
+	font-weight: 600;
+	color: var(--color-orange);
+}
+
+mark[class] {
+	--background-opacity: 15%;
+
+	padding: var(--size-2-1) var(--size-4-1);
+	font-size: var(--font-small);
+
+	font-weight: 600;
+	color: var(--mark-highlight-text);
+	background-color: var(--mark-highlight-base);
+	border-radius: var(--radius-s);
+	-webkit-box-decoration-break: clone;
+	box-decoration-break: clone;
+
+	.external-link {
+		background-position-x: calc(100% - 1px);
+		background-position-y: 2px;
+	}
+
+	&:is(.red, .Red) {
+		--mark-highlight-base: rgba(var(--color-red-rgb), var(--background-opacity));
+		--mark-highlight-text: var(--color-red);
+	}
+
+	&:is(.orange, .Orange) {
+		--mark-highlight-base: rgba(var(--color-orange-rgb), var(--background-opacity));
+		--mark-highlight-text: var(--color-orange);
+	}
+
+	&:is(.yellow, .Yellow) {
+		--mark-highlight-base: rgba(var(--color-yellow-rgb), var(--background-opacity));
+		--mark-highlight-text: var(--color-yellow);
+	}
+
+	&:is(.green, .Green) {
+		--mark-highlight-base: rgba(var(--color-green-rgb), var(--background-opacity));
+		--mark-highlight-text: var(--color-green);
+	}
+
+	&:is(.mint, .Mint) {
+		--mark-highlight-base: rgba(var(--color-mint-rgb), var(--background-opacity));
+		--mark-highlight-text: var(--color-mint);
+	}
+
+	&:is(.cyan, .Cyan) {
+		--mark-highlight-base: rgba(var(--color-cyan-rgb), var(--background-opacity));
+		--mark-highlight-text: var(--color-cyan);
+	}
+
+	&:is(.blue, .Blue) {
+		--mark-highlight-base: rgba(var(--color-blue-rgb), var(--background-opacity));
+		--mark-highlight-text: var(--color-blue);
+	}
+
+	&:is(.purple, .Purple) {
+		--mark-highlight-base: rgba(var(--color-purple-rgb), var(--background-opacity));
+		--mark-highlight-text: var(--color-purple);
+	}
+
+	&:is(.pink, .Pink) {
+		--mark-highlight-base: rgba(var(--color-pink-rgb), var(--background-opacity));
+		--mark-highlight-text: var(--color-pink);
+	}
+
+	&:is(.grey, .Grey) {
+		--mark-highlight-base: rgba(var(--color-grey-rgb), var(--background-opacity));
+		--mark-highlight-text: var(--color-grey);
+	}
+}
