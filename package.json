@@ -6,7 +6,8 @@
   "license": "MIT",
   "homepage": "",
   "scripts": {
-    "devTheme": "sass --watch --no-charset --no-source-map --color \"src/index.scss\" \"D:/Syncthing/Obsidian/Theme Test/.obsidian/themes/BursztynDev.css\"",
+    "devTheme:windows": "sass --watch --no-charset --no-source-map --color \"src/index.scss\" \"D:/Syncthing/Obsidian/Theme Test/.obsidian/themes/BursztynDev.css\"",
+    "devTheme:linux": "sass --watch --no-charset --no-source-map --color \"src/index.scss\" \"/home/damian/Syncthing/Obsidian/Theme Test/.obsidian/themes/BursztynDev.css\"",
     "buildTheme": "node ./build/buildTheme.config.mjs"
   },
   "devDependencies": {

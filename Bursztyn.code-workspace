@@ -31,7 +31,12 @@
 			{
 				"label": "Bursztyn - Dev Theme",
 				"type": "shell",
-				"command": "npm run devTheme",
+				"windows": {
+					"command": "pnpm run devTheme:windows",
+				},
+				"linux": {
+					"command": "pnpm run devTheme:linux",
+				},
 				"group": {
 					"kind": "build",
 					"isDefault": true
@@ -43,7 +48,7 @@
 			{
 				"label": "Bursztyn - Build Theme",
 				"type": "shell",
-				"command": "npm run buildTheme",
+				"command": "pnpm run buildTheme",
 				"group": {
 					"kind": "build",
 					"isDefault": true
