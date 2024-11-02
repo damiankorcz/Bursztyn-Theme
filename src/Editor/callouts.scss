@@ -4,12 +4,12 @@ body {
 	--callout-radius: var(--radius-m);
 	--callout-border-width: 1px;
 	--callout-border-opacity: 0.5;
-	--callout-blend-mode: unset;
+	--callout-blend-mode: multiply;
 	--callout-title-size: 1em;
 }
 
 .callout {
-	background-color: rgba(var(--callout-color), 0.05);
+	background-color: rgba(var(--callout-color), 7.5%);
 
 	.callout-title {
 		position: relative;
