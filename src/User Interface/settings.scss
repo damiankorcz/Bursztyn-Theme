@@ -1,9 +1,9 @@
-// [UI] Settings
 .modal.mod-settings .vertical-tab-header {
 	flex: none;
 	width: 215px;
 	padding: unset;
 	border-right: 1px solid var(--background-modifier-border);
+	padding-top: 40px;
 
 	&::-webkit-scrollbar-thumb {
 		border-right: unset;
