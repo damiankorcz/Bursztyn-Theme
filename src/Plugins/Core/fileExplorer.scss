@@ -8,8 +8,14 @@
 	}
 }
 
-.nav-file-title.is-active {
+.nav-file-title {
 	text-decoration: underline;
+	text-decoration-thickness: 2px;
+	text-decoration-color: transparent;
+
+	&.is-active {
+		text-decoration-color: var(--interactive-accent);
+	}
 }
 
 .nav-files-container {
