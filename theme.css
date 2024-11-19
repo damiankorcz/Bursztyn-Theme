@@ -118,6 +118,7 @@ body {
   --background-modifier-border: #BBB;
   --interactive-accent-mono: #181917;
   --background-modifier-form-field: #ECECEA;
+  --background-primary-rgb: 236, 236, 234;
   --color-red-rgb: 228, 42, 25;
   --color-orange-rgb: 247, 116, 9;
   --color-yellow-rgb: 236, 186, 20;
@@ -398,17 +399,10 @@ body:not(.is-phone) .vertical-tab-nav-item.is-active {
   justify-content: center;
   font-family: var(--font-header);
   border-bottom: 1px solid var(--background-modifier-border);
+  padding: 0.4em 0;
 }
 .setting-item-heading .setting-item-name {
   font-size: var(--font-ui-large);
-  color: var(--text-header);
-  text-align: center;
-}
-.setting-item-heading .setting-item-info {
-  flex: 1;
-}
-.setting-item-heading .setting-item-control {
-  flex: 0;
 }
 
 textarea:active,
@@ -439,7 +433,7 @@ input[type=email]:focus-visible,
 input[type=password]:focus-visible,
 input[type=number]:focus-visible,
 select.dropdown:hover {
-  border: 1px solid var(--interactive-accent-mono);
+  border: 1px solid var(--interactive-accent);
   box-shadow: unset;
 }
 
@@ -455,6 +449,11 @@ select.dropdown:hover {
 
 input[type=range]::-webkit-slider-thumb {
   background-color: var(--interactive-accent);
+}
+
+button.mod-destructive {
+  --text-color: var(--text-on-accent);
+  --interactive-normal: var(--text-error);
 }
 
 .is-phone .modal.mod-settings .modal-title::after,
@@ -547,7 +546,7 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 /* Shadow overlay for the top of scrollable content */
-.cm-editor::before,
+.view-content > .cm-s-obsidian > .cm-editor::before,
 .workspace-leaf::before {
   position: absolute;
   top: 0;
