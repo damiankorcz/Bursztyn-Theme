@@ -63,19 +63,10 @@ body:not(.is-phone) .vertical-tab-nav-item.is-active {
 	justify-content: center;
 	font-family: var(--font-header);
 	border-bottom: 1px solid var(--background-modifier-border);
+	padding: 0.4em 0;
 
 	.setting-item-name {
 		font-size: var(--font-ui-large);
-		color: var(--text-header);
-		text-align: center;
-	}
-
-	.setting-item-info {
-		flex: 1;
-	}
-
-	.setting-item-control {
-		flex: 0;
 	}
 }
 
@@ -107,7 +98,7 @@ input[type="email"]:focus-visible,
 input[type="password"]:focus-visible,
 input[type="number"]:focus-visible,
 select.dropdown:hover {
-	border: 1px solid var(--interactive-accent-mono);
+	border: 1px solid var(--interactive-accent);
 	box-shadow: unset;
 }
 
@@ -126,16 +117,10 @@ input[type="range"]::-webkit-slider-thumb {
 	background-color: var(--interactive-accent);
 }
 
-// .modal.mod-settings .vertical-tab-header::before {
-// 	position: sticky;
-// 	top: 0;
-// 	z-index: var(--layer-cover);
-// 	display: block;
-// 	width: -webkit-fill-available;
-// 	width: fill-available;
-// 	height: 34px;
-// 	content: "";
-// }
+button.mod-destructive {
+	--text-color: var(--text-on-accent);
+	--interactive-normal: var(--text-error);
+}
 
 .is-phone .modal.mod-settings .modal-title::after,
 .modal.mod-settings .vertical-tab-header::after {

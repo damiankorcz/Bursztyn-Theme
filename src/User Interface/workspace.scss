@@ -30,7 +30,7 @@
 }
 
 /* Shadow overlay for the top of scrollable content */
-.cm-editor::before,
+.view-content > .cm-s-obsidian > .cm-editor::before,
 .workspace-leaf::before {
 	position: absolute;
 	top: 0;

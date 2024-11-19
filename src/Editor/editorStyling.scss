@@ -58,10 +58,15 @@ h6 {
 
 .cm-inline-code:not(.cm-formatting-code),
 .cm-s-obsidian .cm-inline-code.cm-formatting ~ .cm-inline-code:not(.cm-formatting),
-.cm-s-obsidian .cm-inline-code:not(.cm-formatting) {
+.cm-s-obsidian .cm-inline-code:not(.cm-formatting),
+.markdown-rendered code {
 	padding: 0 var(--size-4-1);
 	border: 1px solid var(--background-modifier-border);
 	border-radius: var(--radius-s);
+}
+
+pre {
+	border: 1px solid var(--background-modifier-border);
 }
 
 .cm-s-obsidian span.cm-formatting-highlight,
