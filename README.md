@@ -1,4 +1,4 @@
-# Bursztyn
+# Bursztyn-Theme
 
 > `Bursztyn` is a Polish word for Amber (fossil resin). [Pronounciation](https://upload.wikimedia.org/wikipedia/commons/7/71/Pl-bursztyn.ogg)
 
