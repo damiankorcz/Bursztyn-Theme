@@ -83,25 +83,6 @@
 // 	text-align: center;
 // }
 
-/* [UI] Collapsed Pinned Tabs */
-.workspace .mod-root .workspace-tab-header[data-type="markdown"],
-.workspace .mod-root .workspace-tab-header[data-type="empty"] {
-	&:has(.mod-pinned) .workspace-tab-header-inner-icon {
-		display: flex;
-	}
-}
-
-.workspace-tab-header:has(.mod-pinned) .workspace-tab-header-inner-title {
-	display: none;
-}
-
-.workspace .mod-root .workspace-tab-header:has(.mod-pinned),
-.workspace-tab-header:has(.mod-pinned) .workspace-tab-header-inner {
-	flex: unset;
-	width: fit-content;
-	min-width: unset;
-}
-
 /* Ribbon */
 .workspace-ribbon {
 	gap: var(--size-4-2);

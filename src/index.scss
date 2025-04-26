@@ -20,6 +20,9 @@
 @use "Editor/editorStyling.scss";
 @use "Editor/callouts.scss";
 
+/* Community Plugins */
+@use "Plugins/Community/searchSettings.scss";
+
 /* Core Plugins */
 @use "Plugins/Core/bookmarks.scss";
 @use "Plugins/Core/canvas.scss";
@@ -33,6 +36,4 @@
 /* Theme Plugins */
 @use "Plugins/Theme/vaultIcon.scss";
 @use "Plugins/Theme/markHighlightSystem.scss";
-
-/* Community Plugins */
-@use "Plugins/Community/searchSettings.scss";
+@use "Plugins/Theme/alternativeCheckboxes.scss";
